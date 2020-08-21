@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8" />
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1, shrink-to-fit=no"
+  />
+  <!-- Bootstrap CSS -->
+  <link
+    rel="stylesheet"
+    href="assets/vendor/bootstrap/css/bootstrap.min.css"
+  />
+  <link href="assets/vendor/fonts/circular-std/style.css" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/libs/css/style.css" />
+  <link
+    rel="stylesheet"
+    href="assets/vendor/fonts/fontawesome/css/fontawesome-all.css"
+  />
+  <link
+    rel="stylesheet"
+    href="assets/vendor/charts/chartist-bundle/chartist.css"
+  />
+  <link
+    rel="stylesheet"
+    href="assets/vendor/charts/morris-bundle/morris.css"
+  />
+  <link
+    rel="stylesheet"
+    href="assets/vendor/fonts/material-design-iconic-font/css/materialdesignicons.min.css"
+  />
+  <link rel="stylesheet" href="assets/vendor/charts/c3charts/c3.css" />
+  <link
+    rel="stylesheet"
+    href="assets/vendor/fonts/flag-icon-css/flag-icon.min.css"
+  />
+  <title>Concept - Bootstrap 4 Admin Dashboard Template</title>
+</head>
+<body>
+  <!-- ============================================================== -->
+  <!-- main wrapper -->
+  <!-- ============================================================== -->
+  <div class="dashboard-main-wrapper">
+    <!-- ============================================================== -->
+      <!-- navbar -->
+      <!-- ============================================================== -->
+      <div class="dashboard-header">
+        <nav class="navbar navbar-expand-lg bg-white fixed-top">
+          <a class="navbar-brand" href="index.html">Budget Tracker</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto navbar-right-top">
+              <li class="nav-item">
+                <div id="custom-search" class="top-search-bar">
+                  <input
+                    class="form-control"
+                    type="text"
+                    placeholder="Search.."
+                  />
+                </div>
+              </li>
+              <li class="nav-item dropdown notification">
+                <a
+                  class="nav-link nav-icons"
+                  href="#"
+                  id="navbarDropdownMenuLink1"
+                  data-toggle="dropdown"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                  ><i class="fas fa-fw fa-bell"></i>
+                  <span class="indicator"></span
+                ></a>
+                <ul
+                  class="dropdown-menu dropdown-menu-right notification-dropdown"
+                >
+                  <li>
+                    <div class="notification-title">Notification</div>
+                    <div class="notification-list">
+                      <div class="list-group">
+                        <a
+                          href="#"
+                          class="list-group-item list-group-item-action active"
+                        >
+                          <div class="notification-info">
+                            <div class="notification-list-user-img">
+                              <img
+                                src="assets/images/avatar-2.jpg"
+                                alt=""
+                                class="user-avatar-md rounded-circle"
+                              />
+                            </div>
+                            <div class="notification-list-user-block">
+                              <span class="notification-list-user-name"
+                                >Jeremy Rakestraw</span
+                              >accepted your invitation to join the team.
+                              <div class="notification-date">2 min ago</div>
+                            </div>
+                          </div>
+                        </a>
+                        <a
+                          href="#"
+                          class="list-group-item list-group-item-action"
+                        >
+                          <div class="notification-info">
+                            <div class="notification-list-user-img">
+                              <img
+                                src="assets/images/avatar-3.jpg"
+                                alt=""
+                                class="user-avatar-md rounded-circle"
+                              />
+                            </div>
+                            <div class="notification-list-user-block">
+                              <span class="notification-list-user-name"
+                                >John Abraham </span
+                              >is now following you
+                              <div class="notification-date">2 days ago</div>
+                            </div>
+                          </div>
+                        </a>
+                        <a
+                          href="#"
+                          class="list-group-item list-group-item-action"
+                        >
+                          <div class="notification-info">
+                            <div class="notification-list-user-img">
+                              <img
+                                src="assets/images/avatar-4.jpg"
+                                alt=""
+                                class="user-avatar-md rounded-circle"
+                              />
+                            </div>
+                            <div class="notification-list-user-block">
+                              <span class="notification-list-user-name"
+                                >Monaan Pechi</span
+                              >
+                              is watching your main repository
+                              <div class="notification-date">2 min ago</div>
+                            </div>
+                          </div>
+                        </a>
+                        <a
+                          href="#"
+                          class="list-group-item list-group-item-action"
+                        >
+                          <div class="notification-info">
+                            <div class="notification-list-user-img">
+                              <img
+                                src="assets/images/avatar-5.jpg"
+                                alt=""
+                                class="user-avatar-md rounded-circle"
+                              />
+                            </div>
+                            <div class="notification-list-user-block">
+                              <span class="notification-list-user-name"
+                                >Jessica Caruso</span
+                              >accepted your invitation to join the team.
+                              <div class="notification-date">2 min ago</div>
+                            </div>
+                          </div>
+                        </a>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="list-footer">
+                      <a href="#">View all notifications</a>
+                    </div>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown connection">
+                <a
+                  class="nav-link"
+                  href="#"
+                  id="navbarDropdown"
+                  role="button"
+                  data-toggle="dropdown"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                >
+                  <i class="fas fa-fw fa-th"></i>
+                </a>
+                <ul
+                  class="dropdown-menu dropdown-menu-right connection-dropdown"
+                >
+                  <
+            </ul>
+          </div>
+        </nav>
+      </div>
+      <!-- ============================================================== -->
+      <!-- end navbar -->
+      <!-- ============================================================== -->
+    <!-- ============================================================== -->
+    <!-- wrapper  -->
+    <!-- ============================================================== -->
+    <div class="dashboard-wrapper">
+      <div class="dashboard-ecommerce">
+        <div class="container-fluid dashboard-content">
+          <!-- ============================================================== -->
+          <!-- pageheader  -->
+          <!-- ============================================================== -->
+          <div class="row">
+            <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+              <div class="page-header">
+                <h2 class="pageheader-title">Covid Budget: Expenditures</h2>
+                <p class="pageheader-text">
+                  Nulla euismod urna eros, sit amet scelerisque torton lectus
+                  vel mauris facilisis faucibus at enim quis massa lobortis
+                  rutrum.
+                </p>
+                <div class="page-breadcrumb">
+                  <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                      <li class="breadcrumb-item">
+                        <a href="#" class="breadcrumb-link">Dashboard</a>
+                      </li>
+                      <li class="breadcrumb-item active" aria-current="page">Expenditures</li>
+                    </ol>
+                  </nav>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- ============================================================== -->
+          <!-- end pageheader  -->
+          <!-- ============================================================== -->
+          <div class="ecommerce-widget container-fluid">
+            <div class="row">
+              <div class="col-12 col-sm-12 col-md-12 col-lg-4 col-xl-4">
+                <div class="row">
+                  <div class="col-12">
+                    <div class="card">
+                      <h5 class="card-header">Cash Made Available</h5>
+                      <div class="card-body">
+                        <h3>Php 354,600,276,156</h3>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-12">
+                    <div class="card">
+                      <h5 class="card-header">Planned Spending</h5>
+                      <div class="card-body">
+                        <h3>Php 390,435,943,649</h3>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-12">
+                    <div class="card">
+                      <h5 class="card-header">Actual Spent</h5>
+                      <div class="card-body">
+                        <h3>Php 245,564,093,517</h3>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-sm-12 col-md-12 col-lg-8 col-xl-8">
+                <div class="row">
+                  <div class="col-12">
+                    <div class="card">
+                      <h5 class="card-header">% of Planned Budget</h5>
+                      <div class="card-body">
+                          <div id="m-d-summary" style="height: 272px;"></div>
+                      </div>
+                      <div class="card-footer bg-white">
+                          <p>Actual Spent<span class="float-right text-dark">Php 245,564,093,517</span></p>
+                          <p>Planned Budget<span class="float-right text-dark">Php 390,435,943,649</span></p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- END ROW -->
+            <!-- NEW ROW -->
+            <div class="row">
+              <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-8">
+                <div class="card">
+                  <h5 class="card-header">DSWD Programs</h5>
+                  <div class="card-body">
+                    <div class="row">
+                      <div class="col-6">Program</div>
+                      <div class="col-3">Expenses</div>
+                      <div class="col-3">Budget</div>
+                    </div>
+                  </div>
+                  <div class="card-footer bg-white">
+                    <div class="row">
+                      <div class="col-6">4Ps families</div>
+                      <div class="col-3">Php 18,387,354,150</div>
+                      <div class="col-3">Php 18,574,264,900</div>
+                    </div>
+                    <div class="row">
+                      <div class="col-6">4Ps families (2nd Tranche)</div>
+                      <div class="col-3">Php 6,741,409,650</div>
+                      <div class="col-3">Php 7,004,737,500</div>
+                    </div>
+                    <div class="row">
+                      <div class="col-6">Low-Income, Non-4Ps Families</div>
+                      <div class="col-3">Php 80,629,555,050</div>
+                      <div class="col-3">Php 82,124,731,500</div>
+                    </div>
+                    <div class="row">
+                      <div class="col-6">Low-Income, Non-4Ps Families (2nd Tranche)</div>
+                      <div class="col-3">Php 25,854,500</div>
+                      <div class="col-3">Php 72,987,250,500</div>
+                    </div>
+                    <div class="row">
+                      <div class="col-6">PUVs and TNVS</div>
+                      <div class="col-3">Php 785,056,000</div>
+                      <div class="col-3">Php 785,056,000</div>
+                    </div>
+                    <div class="row">
+                      <div class="col-6">Assistance to Individuals in Crisis Situations</div>
+                      <div class="col-3">Php 202,664,126</div>
+                      <div class="col-3"></div>
+                    </div>
+                    <div class="row">
+                      <div class="col-6">Family Food Packs and other assistance</div>
+                      <div class="col-3">Php 12,180,000,000</div>
+                      <div class="col-3"></div>
+                    </div>
+                    <div class="row">
+                      <div class="col-6">Social Pension for Indigent Senior Citizens</div>
+                      <div class="col-3">Php 7,184,535,000</div>
+                      <div class="col-3">Php 10,500,000,000</div>
+                    </div>
+                    <div class="row">
+                      <div class="col-6">Supplemetary Feeding Program</div>
+                      <div class="col-3">Php 2,865,006,126</div>
+                      <div class="col-3"></div>
+                    </div>
+                  </div>
+                </div> 
+              </div>
+              <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-4">
+                  <div class="card">
+                      <h5 class="card-header">DSWD Expenses</h5>
+                      <div class="card-body">
+                          <div id="m-b-dswd" style="height: 272px;"></div>
+                      </div>
+                  </div>
+              </div>
+            </div>
+            <!-- END ROW -->
+            <!-- NEW ROW -->
+            <div class="row">
+              <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-8">
+                <div class="card">
+                  <h5 class="card-header">DOLE Programs</h5>
+                  <div class="card-body">
+                    <div class="row">
+                      <div class="col-6">Program</div>
+                      <div class="col-3">Expenses</div>
+                      <div class="col-3">Budget</div>
+                    </div>
+                  </div>
+                  <div class="card-footer bg-white">
+                    <div class="row">
+                      <div class="col-6">COVID-19 Adjustment Measures Program</div>
+                      <div class="col-3">Php 3,286,000,000</div>
+                      <div class="col-3">Php 3,286,000,000</div>
+                    </div>
+                    <div class="row">
+                      <div class="col-6">TUPAD Barangay Ko, Buhay Ko</div>
+                      <div class="col-3">Php 1,264,000,000</div>
+                      <div class="col-3">Php 7,004,737,500</div>
+                    </div>
+                    <div class="row">
+                      <div class="col-6">CAMP AKAP</div>
+                      <div class="col-3">Php 1,799,000,000</div>
+                      <div class="col-3">Php 2,500,000,000</div>
+                    </div>
+                  </div>
+                </div> 
+              </div>
+              <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-4">
+                  <div class="card">
+                      <h5 class="card-header">DOLE Expenses</h5>
+                      <div class="card-body">
+                          <div id="m-b-dole" style="height: 272px;"></div>
+                      </div>
+                  </div>
+              </div>
+            </div>
+            <!-- END ROW -->
+            <!-- NEW ROW -->
+            <div class="row">
+              <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-8">
+                <div class="card">
+                  <h5 class="card-header">DOF Programs</h5>
+                  <div class="card-body">
+                    <div class="row">
+                      <div class="col-6">Program</div>
+                      <div class="col-3">Expenses</div>
+                      <div class="col-3">Budget</div>
+                    </div>
+                  </div>
+                  <div class="card-footer bg-white">
+                    <div class="row">
+                      <div class="col-6">COVID-19 Adjustment Measures Program</div>
+                      <div class="col-3">Php 3,286,000,000</div>
+                      <div class="col-3">Php 3,286,000,000</div>
+                    </div>
+                    <div class="row">
+                      <div class="col-6">TUPAD Barangay Ko, Buhay Ko</div>
+                      <div class="col-3">Php 1,264,000,000</div>
+                      <div class="col-3">Php 7,004,737,500</div>
+                    </div>
+                    <div class="row">
+                      <div class="col-6">CAMP AKAP</div>
+                      <div class="col-3">Php 1,799,000,000</div>
+                      <div class="col-3">Php 2,500,000,000</div>
+                    </div>
+                  </div>
+                </div> 
+              </div>
+              <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-4">
+                  <div class="card">
+                      <h5 class="card-header">DOF Expenses</h5>
+                      <div class="card-body">
+                          <div id="m-b-dof" style="height: 272px;"></div>
+                      </div>
+                  </div>
+              </div>
+            </div>
+            <!-- END ROW -->
+            <!-- NEW ROW -->
+            <div class="row">
+              <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-8">
+                <div class="card">
+                  <h5 class="card-header">DA Programs</h5>
+                  <div class="card-body">
+                    <div class="row">
+                      <div class="col-6">Program</div>
+                      <div class="col-3">Expenses</div>
+                      <div class="col-3">Budget</div>
+                    </div>
+                  </div>
+                  <div class="card-footer bg-white">
+                    <div class="row">
+                      <div class="col-6">COVID-19 Adjustment Measures Program</div>
+                      <div class="col-3">Php 3,286,000,000</div>
+                      <div class="col-3">Php 3,286,000,000</div>
+                    </div>
+                    <div class="row">
+                      <div class="col-6">TUPAD Barangay Ko, Buhay Ko</div>
+                      <div class="col-3">Php 1,264,000,000</div>
+                      <div class="col-3">Php 7,004,737,500</div>
+                    </div>
+                    <div class="row">
+                      <div class="col-6">CAMP AKAP</div>
+                      <div class="col-3">Php 1,799,000,000</div>
+                      <div class="col-3">Php 2,500,000,000</div>
+                    </div>
+                  </div>
+                </div> 
+              </div>
+              <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-4">
+                  <div class="card">
+                      <h5 class="card-header">DA Expenses</h5>
+                      <div class="card-body">
+                          <div id="m-b-da" style="height: 272px;"></div>
+                      </div>
+                  </div>
+              </div>
+            </div>
+            <!-- END ROW -->
+            <!-- NEW ROW -->
+            <div class="row">
+              <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-8">
+                <div class="card">
+                  <h5 class="card-header">DOH Programs</h5>
+                  <div class="card-body">
+                    <div class="row">
+                      <div class="col-6">Program</div>
+                      <div class="col-3">Expenses</div>
+                      <div class="col-3">Budget</div>
+                    </div>
+                  </div>
+                  <div class="card-footer bg-white">
+                    <div class="row">
+                      <div class="col-6">COVID-19 Adjustment Measures Program</div>
+                      <div class="col-3">Php 3,286,000,000</div>
+                      <div class="col-3">Php 3,286,000,000</div>
+                    </div>
+                    <div class="row">
+                      <div class="col-6">TUPAD Barangay Ko, Buhay Ko</div>
+                      <div class="col-3">Php 1,264,000,000</div>
+                      <div class="col-3">Php 7,004,737,500</div>
+                    </div>
+                    <div class="row">
+                      <div class="col-6">CAMP AKAP</div>
+                      <div class="col-3">Php 1,799,000,000</div>
+                      <div class="col-3">Php 2,500,000,000</div>
+                    </div>
+                  </div>
+                </div> 
+              </div>
+              <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-4">
+                  <div class="card">
+                      <h5 class="card-header">DOH Expenses</h5>
+                      <div class="card-body">
+                          <div id="m-b-doh" style="height: 272px;"></div>
+                      </div>
+                  </div>
+              </div>
+            </div>
+            <!-- END ROW -->
+            <!-- NEW ROW -->
+            <div class="row">
+              <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-8">
+                <div class="card">
+                  <h5 class="card-header">LGU Programs</h5>
+                  <div class="card-body">
+                    <div class="row">
+                      <div class="col-6">Program</div>
+                      <div class="col-3">Expenses</div>
+                      <div class="col-3">Budget</div>
+                    </div>
+                  </div>
+                  <div class="card-footer bg-white">
+                    <div class="row">
+                      <div class="col-6">COVID-19 Adjustment Measures Program</div>
+                      <div class="col-3">Php 3,286,000,000</div>
+                      <div class="col-3">Php 3,286,000,000</div>
+                    </div>
+                    <div class="row">
+                      <div class="col-6">TUPAD Barangay Ko, Buhay Ko</div>
+                      <div class="col-3">Php 1,264,000,000</div>
+                      <div class="col-3">Php 7,004,737,500</div>
+                    </div>
+                    <div class="row">
+                      <div class="col-6">CAMP AKAP</div>
+                      <div class="col-3">Php 1,799,000,000</div>
+                      <div class="col-3">Php 2,500,000,000</div>
+                    </div>
+                  </div>
+                </div> 
+              </div>
+              <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-4">
+                  <div class="card">
+                      <h5 class="card-header">LGU Expenses</h5>
+                      <div class="card-body">
+                          <div id="m-b-lgu" style="height: 272px;"></div>
+                      </div>
+                  </div>
+              </div>
+            </div>
+            <!-- END ROW -->
+            <!-- NEW ROW -->
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ============================================================== -->
+    <!-- end wrapper  -->
+    <!-- ============================================================== -->
+  </div>
+  <!-- ============================================================== -->
+  <!-- end main wrapper  -->
+  <!-- ============================================================== -->
+  <!-- Optional JavaScript -->
+  <!-- jquery 3.3.1 -->
+  <script src="assets/vendor/jquery/jquery-3.3.1.min.js"></script>
+  <!-- bootstap bundle js -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.js"></script>
+  <!-- slimscroll js -->
+  <script src="assets/vendor/slimscroll/jquery.slimscroll.js"></script>
+  <!-- main js -->
+  <script src="assets/libs/js/main-js.js"></script>
+  <!-- chart chartist js -->
+  <script src="assets/vendor/charts/chartist-bundle/chartist.min.js"></script>
+  <!-- sparkline js -->
+  <script src="assets/vendor/charts/sparkline/jquery.sparkline.js"></script>
+  <!-- morris js -->
+  <script src="assets/vendor/charts/morris-bundle/raphael.min.js"></script>
+  <script src="assets/vendor/charts/morris-bundle/morris.js"></script>
+  <!-- chart c3 js -->
+  <script src="assets/vendor/charts/c3charts/c3.min.js"></script>
+  <script src="assets/vendor/charts/c3charts/d3-5.4.0.min.js"></script>
+  <script src="assets/vendor/charts/c3charts/C3chartjs.js"></script>
+  <script src="assets/libs/js/s-morris.js"></script>
+</body>
+</html>
