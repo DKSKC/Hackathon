@@ -11,15 +11,21 @@ $(function() {
                 data: {
                     labels: ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'],
                     datasets: [{
-                        label: 'Current Week',
-                        data: [12, 19, 3, 17, 6, 3, 7],
+                        label: 'Luzon',
+                        data: [3, 29, 55, 60, 45, 25, 31],
                       backgroundColor: "rgba(89, 105, 255,0.5)",
                                     borderColor: "rgba(89, 105, 255,0.7)",
                                     borderWidth: 2
                         
                     }, {
-                        label: 'Previous Week',
-                        data: [2, 29, 5, 5, 2, 3, 10],
+                        label: 'Visayas',
+                        data: [1, 21, 31, 39, 22, 18, 21],
+                          backgroundColor: "rgba(71, 212, 61,0.5)",
+                                    borderColor: "rgba(71, 212, 61,0.7)",
+                                    borderWidth: 2
+                    }, {
+                        label: 'Mindanao',
+                        data: [2, 16, 25, 31, 19, 15, 10],
                           backgroundColor: "rgba(255, 64, 123,0.5)",
                                     borderColor: "rgba(255, 64, 123,0.7)",
                                     borderWidth: 2
@@ -77,15 +83,20 @@ $(function() {
                 type: 'doughnut',
                 
                 data: {
-                    labels: ["Direct", " Affilliate", "Sponsored", " E-mail"],
+                    labels: ["Department of Health", " Philippine General Hospital", "Department of Labor and Employment", " E-Department of Labor and Employment-OWWA","Department of Social Welfare and Development","Department of Trade and Industry","Department of Science and Technology","Department of Agriculture","Department of Education"],
                     datasets: [{
                         backgroundColor: [
                             "#5969ff",
                             "#ff407b",
                             "#25d5f2",
-                            "#ffc750"
+                            "#ffc750",
+                            "#2ec551",
+                            "#ef172c",
+                            "#ffc107",
+                            "#71748d",
+                            "#3d405c"
                         ],
-                        data: [350.56, 135.18, 48.96, 154.02]
+                        data: [51543763000, 743906000, 6787395000, 795556000,148283079000,417393000,2985723000,14500000000,8574518000]
                     }]
                 },
                 options: {

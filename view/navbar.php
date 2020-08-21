@@ -3,7 +3,7 @@
       <!-- ============================================================== -->
       <div class="dashboard-header">
         <nav class="navbar navbar-expand-lg bg-white fixed-top">
-          <a class="navbar-brand" href="index.html">Budget Tracker</a>
+          <a class="navbar-brand" href="index.html">Kabayan</a>
           <button
             class="navbar-toggler"
             type="button"

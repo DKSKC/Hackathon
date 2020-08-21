@@ -219,7 +219,9 @@ a:hover {
     color: #ff407b;
     text-decoration: none;
 }
-
+.text-grey{
+    color: rgb(173, 173, 173))
+}
 a:active,
 a:hover {
     outline: 0;
