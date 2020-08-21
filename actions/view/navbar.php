@@ -1,6 +1,6 @@
   <div class="dashboard-header">
     <nav class="navbar navbar-expand-lg bg-white fixed-top">
-      <a class="navbar-brand" href="../index.html"><b>Budget Tracker</b></a>
+      <a class="navbar-brand" href="../main.html"><b>Budget Tracker</b></a>
       <button
         class="navbar-toggler"
         type="button"
